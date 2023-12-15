@@ -1,12 +1,31 @@
 .App {
   text-align: center;
+  display: flex;
+  height: 100%;
+  position: relative;
 }
-
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+/* Зеленый цвет #00bf84 */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 200px;
+  background-color: #00bf84;
+  color: #fff;
+}
+.modal button {
+  color:#fff;
+  text-transform: capitalize;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

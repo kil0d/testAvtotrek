@@ -1,0 +1,84 @@
+.searchBar {
+    display: flex;
+    text-align: left;
+    margin:20px 0 0  150px;
+    justify-content: space-between;
+}
+.searchBarLeft {
+    display: flex;
+}
+.searchBarRigh, .buttonAction, label {
+    cursor: pointer;
+}
+.searchBarRight {
+    margin-right: 50px;
+}
+.button {
+    width: 100px;
+    cursor: pointer;
+    color: rgb(15, 15, 15);
+    text-transform: capitalize;
+    border: 1px solid gray;
+    color: #656c6d;
+    background-color: #fff;
+    
+}
+.button:hover {
+    width: 100px;
+    background-color: #ecfcf7;
+    border: 1px solid gray;
+    color: #00bf84;
+    transition: all ease-in .3s;
+}
+
+.objbutton {
+    margin-left: 20px;
+    border-top-left-radius:4px;
+    border-bottom-left-radius: 4px;
+    
+    border-top-right-radius:0;
+    border-bottom-right-radius: 0;
+}
+.groupbutton {
+    margin-right: 50px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius:4px;
+    border-bottom-right-radius: 4px;
+    
+}
+.icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.icons:nth-child(n) {
+    cursor: pointer;
+}
+.buttonAction {
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+    text-transform: capitalize;
+    background-color: #00bf84;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.buttonAction:hover, .button {
+    transition: all ease-in .3s;
+}
+.buttonAction:focus {
+    border: none;
+    outline: none;
+}
+label {
+    margin-right: 5px;
+}
+.arrow {
+    margin-left: 10px;
+}
+select, option {
+    cursor: pointer;
+}

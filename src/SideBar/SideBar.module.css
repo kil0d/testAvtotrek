@@ -1,0 +1,38 @@
+.sidebar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 80px;
+    height: 100%;
+    background-color: #2a353e;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0px;
+  }
+.nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color:white
+} 
+.isActive {
+    background-color: #00bf84;
+    padding: 10px 25px;
+    color: black;
+}
+.nav a {
+    color:white
+}
+.logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.logout a {
+    color:white;
+}

@@ -1,0 +1,13 @@
+input, textarea {
+    border: 1px solid black;
+}
+.submitButton {
+    margin: 0 0 10px 10px;
+    width: 100px;
+    background-color: #00bf84;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
