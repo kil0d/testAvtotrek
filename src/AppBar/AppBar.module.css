@@ -25,3 +25,8 @@
 .email {
     margin: 0 5px;
 }
+@media (max-width:1000px) {
+    .links {
+        flex-direction: column;
+    }
+}

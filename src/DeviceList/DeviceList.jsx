@@ -68,34 +68,39 @@ export const DeviceList = (props) => {
           <th>Категория</th>
           <th>Тип объекта</th>
           <th className={style.ids}>ID</th>
-          <th className={style.empty}></th>
+          <th data-title="" className={style.empty}></th>
         </tr>
       </thead>
       <tbody>
         {appState.map((person) => {
           return (
             <tr>
-              <td>
+              <td data-title="checkbox">
                 <Checkbox />
               </td>
-              <td>{person.id}</td>
-              <td>
+              <td data-title="№">{person.id}</td>
+              <td data-title="Иконка">
                 <LocalShippingIcon />
               </td>
-              <td>
+              <td data-title="Фотография">
                 {person.photo === undefined ? (
                   <AccountCircleIcon />
                 ) : (
                   person.photo
                 )}
               </td>
-              <td>{person.name}</td>
-              <td></td>
-              <td></td>
-              <td>truck</td>
-              <td></td>
-              <td className={style.ids}>{person.id}</td>
-              <td className={style.movert + " " + style.empty}>
+              <td data-title="Имя">{person.name}</td>
+              <td data-title="Создатель"></td>
+              <td data-title="Учетная запись"></td>
+              <td data-title="Категория">truck</td>
+              <td data-title="Тип объекта"></td>
+              <td data-title="ID" className={style.ids}>
+                {person.id}
+              </td>
+              <td
+                data-title="Удаление"
+                className={style.movert + " " + style.empty}
+              >
                 <div onClick={menuOpen}>
                   <MoreVertIcon />
                 </div>

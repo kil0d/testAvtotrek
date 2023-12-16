@@ -82,3 +82,20 @@ label {
 select, option {
     cursor: pointer;
 }
+@media (max-width:1000px) {
+    .searchBar,.searchBarLeft {
+        flex-direction: column;
+    }
+    .searchBar {
+        gap: 20px;
+    }
+    .searchBarLeft {
+        gap: 10px;
+        align-items: left;
+        justify-content: left;
+    }
+    .objbutton,.groupbutton {
+        margin:0;
+    }
+    
+}

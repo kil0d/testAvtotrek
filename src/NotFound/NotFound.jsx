@@ -5,7 +5,7 @@ import { AppBar } from "../AppBar/AppBar";
 import style from "./NotFound.module.css";
 export const NotFound = () => {
   return (
-    <div>
+    <div className={style.notFound}>
       <div>
         {" "}
         <Sidebar />

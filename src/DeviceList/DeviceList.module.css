@@ -33,3 +33,29 @@ td {
     border-radius: 3px;
     cursor: pointer;
 }
+.break {
+    display: none;
+}
+@media (max-width:760px) {
+   
+  table thead tr {
+    display: none;
+  }
+  table tr {
+    display: block;
+  }
+  table th, table td {
+    padding: 3em;
+  }
+  table td {
+    text-align: right;
+    display: block;
+  }
+  table td::before {
+    content: attr(data-title) ": ";
+    float: left;
+  }
+  tr {
+    margin-bottom: 50px;
+  }
+}
